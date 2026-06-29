@@ -9,3 +9,6 @@
 --SELECT date_part('dow',now()) as dow, date_part('doy',now()) as doy
 --SELECT extract(dow from now()) as dow, extract(doy from now()) as doy
 --SELECT logtime, DATE_TRUNC('hour',logtime) FROM log_timein
+--SELECT DATE_TRUNC('hour',now())
+--SELECT now(), now()-INTERVAL '6 hours' as sixhoursbefore
+--select make_date(salesyear, salesmonth, salesday) from supermarket_sales
