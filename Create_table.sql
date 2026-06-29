@@ -15,6 +15,8 @@ CREATE TABLE employee (
 );
 */
 
+-- after running this code: right click on the table (such as employee) form the menu, click import/export, select the file from folder, selct the option menu from the window, click header ON. 
+
 /*
 CREATE TABLE courses (
     course_id INT,
@@ -53,4 +55,18 @@ CREATE TABLE supermarket_sales (
     grossincome NUMERIC(10, 4) NOT NULL,
     rating NUMERIC(3, 1) NOT NULL
 );
+*/
+
+/*
+CREATE TABLE zoo_1(
+id INT,
+animal VARCHAR (100)
+)
+*/
+
+/*
+CREATE TABLE zoo_2(
+id INT,
+animal VARCHAR (100)
+)
 */
