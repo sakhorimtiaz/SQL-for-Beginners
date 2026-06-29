@@ -1,0 +1,11 @@
+/* time/date functions */
+--SELECT NOW()
+--SELECT NOW()::DATE
+--SELECT CURRENT_DATE
+--SELECT name,dob, AGE(CURRENT_DATE,dob) FROM employee
+--SELECT name, AGE(dob) FROM employee
+--SELECT firstname,logtime FROM log_timein WHERE logtime BETWEEN '10:30' AND '15:40' 
+--SELECT TO_CHAR(CURRENT_DATE,'Month dd, yyyy')
+--SELECT date_part('dow',now()) as dow, date_part('doy',now()) as doy
+--SELECT extract(dow from now()) as dow, extract(doy from now()) as doy
+--SELECT logtime, DATE_TRUNC('hour',logtime) FROM log_timein
