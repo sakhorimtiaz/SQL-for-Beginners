@@ -1,4 +1,57 @@
 /*
+CREATE TABLE employees_roster (
+    employeeid INT PRIMARY KEY,
+    employeename VARCHAR(150),
+    managerid INT
+);
+*/
+/*
+CREATE TABLE students (
+    studentid INT PRIMARY KEY,
+    studentname VARCHAR(100)
+);
+*/
+
+/*
+CREATE TABLE courses (
+    courseid VARCHAR(10) PRIMARY KEY,
+    coursename VARCHAR(100)
+);
+*/
+/*
+CREATE TABLE shoporder (
+    orderid VARCHAR(50),
+    amount NUMERIC(10, 2) NOT NULL, -- Kept because a transaction must have a price
+    profit NUMERIC(10, 2) NOT NULL, -- Kept because a transaction must calculate financial impact
+    quantity INT NOT NULL,          -- Kept because you must buy at least 1 item
+    category VARCHAR(100),          -- Safe: can be empty
+    subcategory VARCHAR(100)        -- Safe: can be empty
+);
+*/
+/*
+CREATE TABLE customer (
+    orderid VARCHAR(50) PRIMARY KEY, -- Must be NOT NULL by default because it is the Primary Key
+    orderdate DATE NOT NULL,         -- Kept because we must know when it happened
+    customername VARCHAR(250),       -- Safe: can be empty
+    state VARCHAR(100),               -- Safe: can be empty
+    city VARCHAR(100)                 -- Safe: can be empty
+);
+*/
+/*
+CREATE TABLE zoo_1(
+id INT,
+animal VARCHAR (100)
+)
+*/
+
+/*
+CREATE TABLE zoo_2(
+id INT,
+animal VARCHAR (100)
+)
+*/
+
+/*
 CREATE TABLE employee (
     id INT,
     name VARCHAR(100),
@@ -14,8 +67,6 @@ CREATE TABLE employee (
     department VARCHAR(100)
 );
 */
-
--- after running this code: right click on the table (such as employee) form the menu, click import/export, select the file from folder, selct the option menu from the window, click header ON. 
 
 /*
 CREATE TABLE courses (
@@ -54,19 +105,4 @@ CREATE TABLE supermarket_sales (
     grossmarginpercentage NUMERIC(5, 2) NOT NULL,
     grossincome NUMERIC(10, 4) NOT NULL,
     rating NUMERIC(3, 1) NOT NULL
-);
-*/
-
-/*
-CREATE TABLE zoo_1(
-id INT,
-animal VARCHAR (100)
-)
-*/
-
-/*
-CREATE TABLE zoo_2(
-id INT,
-animal VARCHAR (100)
-)
-*/
+); */
