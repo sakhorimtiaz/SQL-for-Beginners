@@ -1,0 +1,15 @@
+/* string functions */
+-- SELECT name, UPPER(name) AS capetalized FROM employee
+-- SELECT name,LOWER(name) FROM employee
+--SELECT scientific_name, INITCAP(scientific_name) FROM animals
+--SELECT RTRIM('--Select AND trim--','-')
+--SELECT RTIM(' Select AND trim ')
+--SELECT LTRIM('--Select AND trim--','-')
+--SELECT LTRIM('  Select AND trim  ')
+--SELECT TRIM(BOTH '-' FROM '--Select and trim--')
+--SELECT TRIM(LEADING '-' FROM '--Select and trim--')
+--SELECT TRIM(TRAILING '-' from '--Select and trim--')
+--SELECT * FROM animals WHERE common_name LIKE '%cat'
+--SELECT * FROM animals WHERE common_name LIKE '%cat%'
+--SELECT * FROM animals WHERE common_name LIKE 'Pu__'
+--SELECT * FROM animals WHERE common_name like 'Pu_'
