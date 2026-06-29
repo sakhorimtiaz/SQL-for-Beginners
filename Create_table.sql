@@ -32,3 +32,25 @@ logdate	DATE,
 logtime TIME
 )
 */
+/*
+CREATE TABLE supermarket_sales (
+    invoiceid VARCHAR(50) PRIMARY KEY,
+    branch CHAR(1) NOT NULL,
+    city VARCHAR(100) NOT NULL,
+    customertype VARCHAR(50) NOT NULL,
+    gender VARCHAR(10) NOT NULL,
+    productline VARCHAR(100) NOT NULL,
+    unitprice NUMERIC(10, 2) NOT NULL,
+    quantity INT NOT NULL,
+    tax NUMERIC(10, 4) NOT NULL,
+    total NUMERIC(10, 4) NOT NULL,
+    salesday INT NOT NULL,
+    salesmonth INT NOT NULL,
+    salesyear INT NOT NULL,
+    payment VARCHAR(50) NOT NULL,
+    cogs NUMERIC(10, 2) NOT NULL,
+    grossmarginpercentage NUMERIC(5, 2) NOT NULL,
+    grossincome NUMERIC(10, 4) NOT NULL,
+    rating NUMERIC(3, 1) NOT NULL
+);
+*/
