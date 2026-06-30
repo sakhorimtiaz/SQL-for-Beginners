@@ -40,3 +40,14 @@ FROM
 zoo_1
 FULL OUTER JOIN zoo_2 ON zoo_1.animal=zoo_2.animal;
 */
+--SELECT * FROM customer NATURAL JOIN shoporder
+--SELECT * FROM students CROSS JOIN courses
+
+--SELECT * FROM employees_roster
+/*
+SELECT a.employeename,
+b.employeename AS managername
+FROM 
+employees_roster a
+INNER JOIN employees_roster b ON b.employeeid=a.managerid
+*/
