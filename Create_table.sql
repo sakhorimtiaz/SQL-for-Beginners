@@ -106,3 +106,37 @@ CREATE TABLE supermarket_sales (
     grossincome NUMERIC(10, 4) NOT NULL,
     rating NUMERIC(3, 1) NOT NULL
 ); */
+
+/*
+CREATE TABLE retail_customer (
+    customer_id INT PRIMARY KEY,
+    dob DATE,
+    gender CHAR(1),
+    city_code INT
+);
+*/
+
+/*
+CREATE TABLE retail_products (
+    cat_code INT,
+    cat VARCHAR(100),
+    sub_cat_code INT,
+    sub_cat VARCHAR(100),
+    PRIMARY KEY (cat_code, sub_cat_code)
+);
+*/
+/*
+CREATE TABLE retail_transaction (
+    transaction_id BIGINT, -- Using BIGINT because IDs exceed standard 2-billion INT limits
+    customer_id INT,
+    tran_date DATE,
+    sub_cat_code INT,
+    cat_code INT,
+    qty INT,
+    rate NUMERIC(10, 2),
+    tax NUMERIC(10, 3),
+    total_amt NUMERIC(10, 3),
+    store_type VARCHAR(50)
+);
+*/
+
