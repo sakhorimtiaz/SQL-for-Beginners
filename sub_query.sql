@@ -30,3 +30,5 @@ SELECT
     (SELECT AVG(e2.salary) FROM employee e2 WHERE e2.department = e1.department) AS avg_salary
 FROM employee e1 
 ORDER BY e1.department;
+SELECT customer_id, store_type FROM retail_transaction 
+where exists (SELECT *FROM retail_customer where customer_id=customer_id)
