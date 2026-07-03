@@ -51,3 +51,19 @@ FROM
 employees_roster a
 INNER JOIN employees_roster b ON b.employeeid=a.managerid
 */
+
+SELECT id, animal 
+FROM zoo_1
+
+UNION
+
+SELECT id, animal 
+FROM zoo_2;
+
+SELECT id, animal 
+FROM zoo_1
+
+UNION ALL
+
+SELECT id, animal 
+FROM zoo_2
