@@ -138,5 +138,22 @@ CREATE TABLE retail_transaction (
     total_amt NUMERIC(10, 3),
     store_type VARCHAR(50)
 );
-*/
 
+*/
+CREATE TABLE landslide_records (
+    row_id INT PRIMARY KEY,
+    hazard_date DATE NOT NULL,
+    continent_code VARCHAR(5),
+    country_name VARCHAR(100),
+    country_code CHAR(2),
+    state_province VARCHAR(100),
+    population INT,
+    city_town VARCHAR(100),
+    distance NUMERIC(8,4),       -- Handles precise decimal distance
+    latitude NUMERIC(7,4),       -- Spatial coordinate spacing
+    longitude NUMERIC(7,4),      -- Spatial coordinate spacing
+    hazard_type VARCHAR(50),
+    landslide_type VARCHAR(100),
+    landslide_size VARCHAR(50),
+    trigger_cause VARCHAR(100)   -- 'trigger' is a reserved SQL keyword
+);
